@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>  
+    <form id="getDate" name="prompt" onsubmit="doShow()">
+        <h1>Enter Date of Birth</h1>
+        <div class="row">
+            <input type="date" id="dob" name="bday"/>
+            <button type="submit"><b>Enter</b></button>
+        </div>
+    </form>
+    <section id="showAge" style="display: none;">
+        <h2>You are</h2>
+        <div class="age">
+            <h3 id="years"></h3>
+            <p><b>years</b></p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
