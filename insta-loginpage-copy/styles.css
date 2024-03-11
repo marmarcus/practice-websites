@@ -1,0 +1,294 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 45px auto 0;
+    padding-bottom: 32px;
+}
+
+#content {
+    width: 100%;
+}
+
+.upper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.right, .left {
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.right {
+    justify-content: flex-start;
+    height: 100%;
+}
+
+@media (max-width: 875px) {
+    .left {
+        display: none;
+    }
+    .right {
+        width: 100%;
+    }
+}
+
+.image {
+    transform: translate(32px, -1px);
+    align-self: flex-end;
+    height: 581.15px;
+    width: 380.317px;
+    background-position: center top;
+    background-size: 468.32px 634.15px;
+    background-image: url('images/home-phones.png');
+    margin-right: 35px;
+    margin-top: 2px;
+    margin-bottom: 12px;
+    background-repeat: no-repeat;
+}
+
+#iphonepic {
+    transition: opacity 0.75s ease-in-out;
+    opacity: 1;
+    transform: translate(114px, 27px);
+}
+
+.whole-login {
+    transform: translateX(31px);
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    max-width: 350px;
+    max-height: 584.5px;
+    margin-top: 12px;
+}
+
+.account, .signup {
+    border: solid 1px rgba(71, 71, 71, 0.185);
+    border-radius: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 348px;
+}
+
+.account {
+    height: 393px;
+    padding: 5px 0;
+}
+
+#instalogo {
+    position: absolute;
+    transform: translateY(-130px);
+}
+
+#instalogo:hover {
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    height: 216.5px;
+    width: 348px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    margin-bottom: 18px;
+}
+
+.signup {
+    font-size: 15px;
+    font-weight: 400;
+    height: 61px;
+    margin-top: 10px;
+}
+
+input {
+    background-color: rgba(240, 240, 240, 0.301);
+    border: solid 1px rgba(71, 71, 71, 0.178);
+    border-radius: 3px;
+    width: 262px;
+    height: 34px;
+}
+
+.usercontent, .passcontent {
+    font-size: 12px;
+}
+
+.usercontent > input {
+    margin-bottom: 6px;
+}
+
+input:focus {
+    outline: none;
+    border-color: rgba(71, 71, 71, 0.452);
+}
+
+button {
+    background-color: rgb(95, 182, 233);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin: 14px 0 15px 0;
+    padding: 3px;
+    width: 268px;
+    height: 32px;
+}
+
+button:hover {
+    background-color: rgb(42, 130, 189);
+}
+
+button .submit {
+    font-size: 15px;
+    font-weight: 510;
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    color: rgb(122, 122, 122);
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.or > hr {
+    margin: 0 15px 0 15px;
+    height: 1px;
+    width: 110px;
+    border: none;
+    background-color: rgba(206, 206, 206, 0.623);
+}
+
+.fb-login {
+    margin-top: 12px;
+}
+
+.fb-login > a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 800;
+    color: #3b5998;
+}
+
+#facebook {
+    margin-right: 8px;
+}
+
+.forgot-pass > a {
+    text-decoration: none;
+    font-size: 12px;
+    color: rgb(61, 61, 145);
+}
+
+.su-button {
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(95, 182, 233);
+}
+
+.apps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    height: 96.5px;
+}
+
+.getapps {
+    max-height: 18px;
+}
+
+p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.stores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45.5px;
+    width: 350px;
+    margin: 10px 0;
+}
+
+.downloads > img {
+    max-width: 136px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+footer {
+    width: 100%;
+    height: 135px;
+    color: white;
+    line-height: 135px;
+}
+
+.lower-items {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-top: 19px;
+    height: 30%;
+}
+
+.tags {
+    margin-right: 14px;
+}
+
+.tags > a {
+    text-decoration: none;
+    font-size: 12.5px;
+    font-weight: 300;
+    color: rgb(78, 78, 78);
+}
+
+.tags > a:hover {
+    text-decoration: underline;
+}
